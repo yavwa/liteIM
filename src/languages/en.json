@@ -1,0 +1,554 @@
+{
+    "keyboardSupport": {
+        "request": {
+            "changeEmail": {
+                "newEmail": [
+                    "No problem; let's get your email changed. What would you like to change it to?"
+                ],
+                "code": [
+                    "Please enter the two factor authentication code you received via SMS."
+                ],
+                "password": [
+                    "Please use the secure password form to change your email to ${newEmail}."
+                ]
+            },
+            "changePassword": {
+                "code": [
+                    "I see you'd like to change your password. Please enter the security code you just received via SMS."
+                ],
+                "password": [
+                    "Please use the secure form to submit your current password and set your new password."
+                ]
+            },
+            "enable2FA": {
+                "number": [
+                    "We'll need to setup two factor authentication to protect your account. Please enter your mobile phone number in this format: \n+[country][number] \n\nExample: +17185555555"
+                ],
+                "code": [
+                    "Please enter the code you received at +${number}."
+                ],
+                "password": [
+                    "Please use the secure password form to submit your password."
+                ]
+            },
+            "export": {
+                "type": [
+                    "I can help you export your wallet so you can import it into another wallet. Just remember to keep this safe, and don't share it with anyone! Do you want me to show you your private key WIF, or your mnemonic seed phrase?"
+                ],
+                "code": [
+                    "Please enter the two factor authentication code you received via SMS."
+                ],
+                "password": [
+                    "Please use the secure password form to enter your password and I'll get that for you right away."
+                ]
+            },
+            "send": {
+                "to": [
+                    "Who would you like to send LTC to? You can send me a valid email address, a valid phone number, or a valid Litecoin address."
+                ],
+                "currency": [
+                    "Would you prefer to express the amount in USD ($) or LTC (Ł)?\n"
+                ],
+                "amount": [
+                    "How much do you want to send to ${to}, expressed in ${currency}? \n\nExample: 1.50"
+                ],
+                "code": [
+                    "Please enter the two factor authentication code you received via SMS."
+                ],
+                "password": [
+                    "Please use the secure password form to send ${amount} to ${to}."
+                ]
+            },
+            "sendAll": {
+                "code": [
+                    "Warning: you have requested to send your entire balance. I can do this for you, just be sure you won't receive funds in the next few minutes until this transaction has been sent. Enter the two factor authentication code you received via SMS to confirm."
+                ]
+            },
+            "signup": {
+                "email": [
+                    "What is your your primary email address?"
+                ],
+                "phone": [
+                    "Please enter your mobile phone number in this format: \n+[country][number] \n\nExample: +17185555555"
+                ],
+                "code": [
+                    "Please enter the code you received at +${number}."
+                ],
+                "password": [
+                    "Please use the secure password form to set a secure password for your Lite.IM account."
+                ]
+            },
+            "linkAccount": {
+                "code": [
+                    "I see that you have used Lite.IM with this email address on another service, would you like me to link these accounts? If so, please enter the two factor authentication code you received via SMS to proceed."
+                ],
+                "password": [
+                    "Please use the secure password form so I can link this account for you."
+                ]
+            },
+            "balance": {},
+            "clear": {},
+            "help": [
+                "What would you like to do?"
+            ],
+            "receive": [
+                "Would you like to see your Litecoin wallet address, a QR code, or your registered email address?"
+            ],
+            "transactions": {}
+        },
+        "success": {
+            "changeEmail": [
+                "Great! Your email address has been updated to ${newEmail}."
+            ],
+            "changePassword": [
+                "You successfully changed your password. Please remember your new password, but keep it safe from others."
+            ],
+            "enable2fa": [
+                "Thank you for signing up. Now what would you like to do?"
+            ],
+            "export": {},
+            "send": {
+                "sender": [
+                    "Transaction sent! Click below to see the transaction details."
+                ],
+                "recipient": [
+                    "You just received Ł${amount} from ${username}."
+                ]
+            },
+            "signup": [
+                "You successfully signed up and your wallet address is: <pre>${address}</pre>"
+            ],
+            "linkAccount": [
+                "Great! I have linked this account to your existing LiteIM account."
+            ],
+            "balance": {
+                "withUnconfirmed": [
+                    "Your balance is ${balance} LTC, and your unconfirmed balance is ${unconfirmedBalance} LTC."
+                ],
+                "withUnconfirmedUSD": [
+                    "Your balance is ${balance} LTC or $${balanceUSD}, and your unconfirmed balance is ${unconfirmedBalance} LTC or $${unconfirmedUSD}."
+                ],
+                "withoutUnconfirmed": [
+                    "Your balance is ${balance} LTC."
+                ],
+                "withoutUnconfirmedUSD": [
+                    "Your balance is ${balance} LTC or $${balanceUSD}."
+                ]
+            },
+            "start": {
+                "welcome": [
+                    "Hi there! Please click Register to begin. By enrolling, you agree to our terms and conditions https://www.zulurepublic.io/terms-and-conditions/, and our privacy policy: https://www.lite.im/privacy-policy/"
+                ],
+                "welcomeBack": [
+                    "Hey there, good to see you again. What would you like to do?"
+                ]
+            },
+            "clear": [
+                "Commands have been cleared."
+            ],
+            "help": {},
+            "receive": {
+                "qr": [
+                    ""
+                ]
+            },
+            "transactions": [
+                "Here's a look at your ${moreThanOne} most recent transactions:"
+            ],
+            "more": [
+                "Here are some more commands you I can perform for you."
+            ],
+            "main": [
+                "What would you like to do?"
+            ]
+        },
+        "failure": {
+            "unknownInput": [
+                "Sorry I didn't quite get that. Please cancel and try again."
+            ],
+            "generic": [
+                "Sorry, I had an issue with your request. Please try again.",
+                "Something went wrong, please try again."
+            ],
+            "conversation": {
+                "unexpectedInput": [
+                    "Not sure what to do here. Click \"Cancel\" to cancel the current command."
+                ],
+                "invalidStep": [
+                    "Please enter a valid ${step}."
+                ],
+                "unexpectedStepError": [
+                    "An error occurred, please try sending \"${step}\" again."
+                ]
+            },
+            "twoFactor": {
+                "invalid": [
+                    "You entered an invalid code, or the code we sent you has expired. Please try again."
+                ],
+                "numberInUse": [
+                    "Sorry, but that phone number is already registered. Please try again with a different number in this format: \n+[country][number] \n\nExample: +17185555555"
+                ],
+                "notEnabled": [
+                    "Two factor is not enabled."
+                ],
+                "notFound": [
+                    "Could not find phone number for this user."
+                ],
+                "noPending": [
+                    "There is no pending two factor for this number."
+                ]
+            },
+            "alreadyRegistered": [
+                "You already exist, you don't need to sign up."
+            ],
+            "password": [
+                "Invalid password, please try again."
+            ],
+            "changeEmail": {
+                "addressInUse": [
+                    "Sorry, but that email address is already registered. Please use a different one."
+                ],
+                "backend": [
+                    "Error changing email address."
+                ]
+            },
+            "changePassword": {
+                "backend": [
+                    "Error changing password."
+                ]
+            },
+            "enable2fa": {},
+            "export": {
+                "backend": [
+                    "Sorry, I had an issue fetching your ${type}. Please try again."
+                ]
+            },
+            "send": {
+                "zeroBalance": [
+                    "You don't have any LTC to send silly! Click \"Receive\" to fund your Lite.IM wallet."
+                ],
+                "noUTXOs": [
+                    "I couldn't find any unspent transactions for your wallet. Please make sure your wallet is funded, and your deposits have at least one confirmation, then try again."
+                ],
+                "fetchBalance": [
+                    "I was unable to fetch your balance. Click \"Cancel\" to start over."
+                ],
+                "transaction": [
+                    "I had a problem processing your transaction. Please try again."
+                ],
+                "invalidAddress": [
+                    "You can only send to email addresses and Litecoin addresses. Please try again."
+                ],
+                "notRegistered": [
+                    "Sorry, but ${entry} hasn't registered with Lite.IM yet. Let them know what they're missing, and you can start sending to them in no time."
+                ]
+            },
+            "signup": {
+                "backend": [
+                    "Failed to create wallet, please try again."
+                ]
+            },
+            "balance": {
+                "backend": [
+                    "Error getting balance."
+                ]
+            },
+            "clear": [
+                "There was a problem clearing your commands. Please try again or send \"?\""
+            ],
+            "help": {},
+            "receive": {
+                "fetchAddress": "I had a problem looking up your receiving addresses. Please try again, sorry about that."
+            },
+            "transactions": {
+                "noTransactions": [
+                    "Hmm I didn't seem to find any transactions for you."
+                ]
+            },
+            "firestore": {
+                "emailExists": [
+                    "Sorry, but that email address is already registered. Please use a different one."
+                ]
+            }
+        }
+    },
+    "noKeyboardSupport": {
+        "request": {
+            "changeEmail": {
+                "newEmail": [
+                    "No problem; let's get your email changed. What would you like to change it to?"
+                ],
+                "code": [
+                    "Please enter the two factor authentication code you received via SMS."
+                ],
+                "password": [
+                    "Please reply with your password if you want to change your email to ${newEmail}."
+                ]
+            },
+            "changePassword": {
+                "code": [
+                    "I see you'd like to change your password. Please enter the security code you just received via SMS."
+                ],
+                "password": [
+                    "Please enter your current password followed by you new password, each separated by a space. \n\nExample: yourPassword yourNewPassword"
+                ]
+            },
+            "enable2fa": {
+                "number": [
+                    "We'll need to setup 2fa to protect your account. Please enter your mobile phone number in this format: \n+[country][number] \n\nExample: +17185555555"
+                ],
+                "code": [
+                    "Please enter the code you received at +${number}."
+                ],
+                "password": [
+                    "Please enter your password."
+                ]
+            },
+            "export": {
+                "type": [
+                    "What would you like me to show?"
+                ],
+                "code": [
+                    "Please enter the two factor authentication code you received via SMS."
+                ],
+                "password": [
+                    "Please reply with your password and I'll get that for you right away."
+                ]
+            },
+            "send": {
+                "to": [
+                    "Who would you like to send LTC to? You can send me a valid email address, a valid phone number, or a valid Litecoin address."
+                ],
+                "currency": [
+                    "How would you prefer to express the amount?"
+                ],
+                "amount": [
+                    "How much do you want to send to ${to}, expressed in ${currency}? \n\nExample: 1.50"
+                ],
+                "code": [
+                    "Please enter the two factor authentication code you received via SMS."
+                ],
+                "password": [
+                    "If you want to send ${amount} to ${to} then please reply with your password so I can continue."
+                ]
+            },
+            "sendAll": {
+                "code": [
+                    "Warning: you have requested to send your entire balance. Enter the two factor authentication code you received via SMS to confirm."
+                ]
+            },
+            "signup": {
+                "email": [
+                    "What is your your primary email address?"
+                ],
+                "phone": [
+                    "Please enter your mobile phone number in this format: \n+[country][number] \n\nExample: +17185555555"
+                ],
+                "code": [
+                    "Please enter the code you received at +${number}."
+                ],
+                "password": [
+                    "Please enter a safe password for your Lite.IM account."
+                ]
+            },
+            "linkAccount": {
+                "code": [
+                    "I recognize this email address! Please enter the two factor authentication code you received via SMS to link this account."
+                ],
+                "password": [
+                    "Please reply with your password so I can link this account for you."
+                ]
+            },
+            "balance": {},
+            "clear": {},
+            "help": [
+                "Here is a list of things you can do:"
+            ],
+            "receive": [
+                "Would you like to see your Litecoin wallet address, a QR code, or your registered email address?"
+            ],
+            "transactions": {}
+        },
+        "success": {
+            "changeEmail": [
+                "Great! Your email address has been updated to ${newEmail}. Please remember to clear this conversation to remove sensitive information."
+            ],
+            "changePassword": [
+                "You successfully changed your password to \"${newPassword}\". Please keep it safe from others, and remember to clear this conversation."
+            ],
+            "enable2fa": [
+                "Thank you for signing up. Please remember to clear this conversation to remove sensitive information. Now what would you like to do?"
+            ],
+            "export": {},
+            "send": {
+                "sender": [
+                    "Transaction sent! Click below to see the transaction details. Please remember to clear this conversation to remove sensitive information."
+                ],
+                "recipient": [
+                    "You just received Ł${amount} from ${username}."
+                ]
+            },
+            "signup": [
+                "You successfully signed up and your wallet address is: ${address}. Send \"?\" any time for a list of commands."
+            ],
+            "linkAccount": [
+                "Great! I have linked this account to your existing LiteIM account. Send \"?\" any time for a list of commands."
+            ],
+            "balance": {
+                "withUnconfirmed": [
+                    "Your balance is ${balance} LTC, and your unconfirmed balance is ${unconfirmedBalance} LTC."
+                ],
+                "withUnconfirmedUSD": [
+                    "Your balance is ${balance} LTC or $${balanceUSD}, and your unconfirmed balance is ${unconfirmedBalance} LTC or $${unconfirmedUSD}."
+                ],
+                "withoutUnconfirmed": [
+                    "Your balance is ${balance} LTC."
+                ],
+                "withoutUnconfirmedUSD": [
+                    "Your balance is ${balance} LTC or $${balanceUSD}."
+                ]
+            },
+            "start": {
+                "welcome": [
+                    "Hi there! Please reply with \"signup\" to begin. By enrolling, you agree to our terms and conditions https://www.zulurepublic.io/terms-and-conditions/, and our privacy policy: https://www.lite.im/privacy-policy/"
+                ],
+                "welcomeBack": [
+                    "Hey there, good to see you again."
+                ]
+            },
+            "clear": [
+                "Commands have been cleared. Send \"?\" for a list of commands."
+            ],
+            "cancel": [
+                "Reply with the number of your choice: \n[0] receive\n[1] send\n[2] balance\n[3] export\n[4] changeEmail\n[5] changePassword"
+            ],
+            "help": {},
+            "receive": {
+                "qr": [
+                    "Here is a QR code you can use to receive Litecoin: \n\n${url}"
+                ]
+            },
+            "transactions": [
+                "Here's a look at your ${moreThanOne} most recent transactions:"
+            ],
+            "more": [
+                "Here are some more commands you I can perform for you."
+            ],
+            "main": [
+                "What would you like to do?"
+            ]
+        },
+        "failure": {
+            "unknownInput": [
+                "Sorry I didn't quite get that. Reply with 'clear' to try again."
+            ],
+            "generic": [
+                "Sorry, I had an issue with your request. Please try again.",
+                "Something went wrong, please try again."
+            ],
+            "conversation": {
+                "unexpectedInput": [
+                    "Not sure what to do here. Reply with \"clear\" to cancel the current command."
+                ],
+                "invalidStep": [
+                    "Please enter a valid ${step}."
+                ],
+                "unexpectedStepError": [
+                    "An error occurred, please try sending \"${step}\" again."
+                ]
+            },
+            "twoFactor": {
+                "invalid": [
+                    "You entered an invalid code, or the code we sent you has expired. Please try again."
+                ],
+                "numberInUse": [
+                    "Sorry, but that phone number is already registered. Please try again with a different number in this format: \n+[country][number] \n\nExample: +17185555555"
+                ],
+                "notEnabled": [
+                    "Two factor is not enabled."
+                ],
+                "notFound": [
+                    "Could not find phone number for this user."
+                ],
+                "noPending": [
+                    "There is no pending two factor for this number."
+                ]
+            },
+            "alreadyRegistered": [
+                "You already exist, you don't need to sign up."
+            ],
+            "password": [
+                "Invalid password, please try again."
+            ],
+            "changeEmail": {
+                "addressInUse": [
+                    "Sorry, but that email address is already registered. Please use a different one."
+                ],
+                "backend": [
+                    "Error changing email address."
+                ]
+            },
+            "changePassword": {
+                "backend": [
+                    "Error changing password."
+                ]
+            },
+            "enable2fa": {},
+            "export": {
+                "backend": [
+                    "Sorry, I had an issue fetching your ${type}. Please try again."
+                ]
+            },
+            "send": {
+                "zeroBalance": [
+                    "You don't have any LTC to send silly! Reply with \"receive\" to fund your Lite.IM wallet."
+                ],
+                "noUTXOs": [
+                    "Please make sure your wallet is funded, and your deposits have at least one confirmation, then try again."
+                ],
+                "fetchBalance": [
+                    "I was unable to fetch your balance. Reply with \"clear\" to start over."
+                ],
+                "transaction": [
+                    "I had a problem processing your transaction. Please try again."
+                ],
+                "invalidAddress": [
+                    "You can only send to email addresses and Litecoin addresses. Please try again."
+                ],
+                "notRegistered": [
+                    "Sorry, but ${entry} hasn't registered with Lite.IM yet. Let them know what they're missing, and you can start sending to them in no time!"
+                ]
+            },
+            "signup": {
+                "backend": [
+                    "Failed to create wallet, please try again."
+                ]
+            },
+            "balance": {
+                "backend": [
+                    "Error getting balance."
+                ]
+            },
+            "clear": [
+                "There was a problem clearing your commands. Please try again."
+            ],
+            "cancel": [
+                "Reply with the number of your choice: \n[0] receive\n[1] send\n[2] balance\n[3] export\n[4] changeEmail\n[5] changePassword"
+            ],
+            "help": {},
+            "receive": {
+                "fetchAddress": "I had a problem looking up your receiving addresses. Please try again, sorry about that."
+            },
+            "transactions": {
+                "noTransactions" : [
+                    "Hmm I didn't seem to find any transactions for you."
+                ]
+            },
+            "firestore": {
+                "emailExists": [
+                    "Sorry, but that email address is already registered. Please use a different one."
+                ]
+            }
+        }
+    }
+}

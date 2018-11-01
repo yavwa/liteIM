@@ -1,0 +1,41 @@
+{
+  "name": "liteIM",
+  "version": "1.1.2",
+  "main": "src/server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zulurepublic/liteIM.git"
+  },
+  "author": "Zulu Republic",
+  "contributors": [
+    {
+      "name": "Michael Rodriguez",
+      "email": "michael@zulurepublic.io"
+    },
+    {
+      "name": "Jose Castellanos",
+      "email": "jose@zulurepublic.io"
+    }
+  ],
+  "license": "AGPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/zulurepublic/liteIM/issues"
+  },
+  "homepage": "https://github.com/zulurepublic/liteIM#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "firebase-admin": "^6.0.0",
+    "helmet": "^3.13.0",
+    "libphonenumber-js": "^1.4.3",
+    "litecore-lib": "^0.13.22",
+    "request": "^2.87.0",
+    "request-promise-native": "^1.0.5",
+    "telegraf": "^3.21.0",
+    "twilio": "^3.19.1",
+    "uuid": "^3.3.2",
+    "zalo-sdk": "^2.0.4"
+  },
+  "description": "Lite.IM is a full-featured conversational Litecoin wallet."
+}
