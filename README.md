@@ -2,7 +2,9 @@
 
 ## 1. What is Lite.IM?
 
-Lite.IM is a full-featured conversational Litecoin wallet. Users can signup and create their wallet, send and receive Litecoin, and check their balance and transaction history, all with a simple set of commands.
+Lite.IM is a full-featured, conversational Litecoin wallet built for use with SMS and instant messaging apps. Users can signup and create their wallet, send and receive litecoin, and check their balance and transaction history, all with a simple set of commands.
+
+Currently, Lite.IM supports Telegram, Facebook Messenger, as well as SMS messaging for U.S. phone numbers, with additional app and country support coming soon.
 
 Lite.IM is a project from the [Zulu Republic](https://www.zulurepublic.io/) team. 
 
@@ -10,11 +12,11 @@ Lite.IM is a project from the [Zulu Republic](https://www.zulurepublic.io/) team
 
 **Architecture**
 
-Lite.IM is lightweight, yet robust. Lite.IM is built to be scalable, highly available, and most importantly, secure. We are using industry leading services to assure the highest level of quality and peace of mind. You don't have to worry about our servers going down, because we don't have any!
+Lite.IM is lightweight, yet robust. Lite.IM is built to be scalable, highly available, and most importantly, secure. We are using industry leading services to assure the highest level of quality and peace of mind. 
 
 **Private Keys**
 
-Security is at the forefront of our services. Users' private keys are RSA encrypted using the user's password. Only the encrypted value is stored, which can only be decrypted using the user's password. We do not store passwords of any sort, authentication tokens of any sort, nor do we ever store an unencrypted version of a user's sensitive data.
+Security is at the forefront of our services. Users' private keys are RSA encrypted using the user's password. Only the encrypted value is stored, which can only be decrypted using the user's password. We do not store passwords of any sort, authentication tokens of any sort, nor do we ever store an unencrypted version of a user's sensitive data, so users' funds are secure even if our servers are compromised. 
 
 ## 3. Platforms In Production
 
