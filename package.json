@@ -1,23 +1,27 @@
 {
-  "name": "Shillingmessenger",
+  "name": "liteIM",
   "version": "1.1.2",
   "main": "src/server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yavwa/liteIM.git"
+    "url": "git+https://github.com/zulurepublic/liteIM.git"
   },
-  "author": "Kelvin Yavwa",
+  "author": "Zulu Republic",
   "contributors": [
     {
-      "name": "Kelvin Yavwa",
-      "email": "digitalshilling@gmail.com"
+      "name": "Michael Rodriguez",
+      "email": "michael@zulurepublic.io"
     },
+    {
+      "name": "Jose Castellanos",
+      "email": "jose@zulurepublic.io"
+    }
   ],
   "license": "AGPL-3.0-only",
   "bugs": {
-    "url": "https://github.com/yavwa/liteIM/issues"
+    "url": "https://github.com/zulurepublic/liteIM/issues"
   },
-  "homepage": "https://github.com/yavwa/liteIM#readme",
+  "homepage": "https://github.com/zulurepublic/liteIM#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "dotenv": "^6.0.0",
