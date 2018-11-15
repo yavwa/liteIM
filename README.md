@@ -19,7 +19,7 @@ Security is at the forefront of our services. Users' private keys are RSA encryp
 
 User onboarding takes place directly within the bot's chat environment. Users are prompted to register with an email address and password, and to enable two-factor authentication with a mobile phone number. Upon successful registration and confirmation of the received 2FA code, the user's wallet is ready to use. 
 
-By following simple prompts from the bot, users can then send and receive Litecoin, reveal their balance, and view their recent transaction history. 
+By following simple prompts from the bot, users can then send and receive Shilling, reveal their balance, and view their recent transaction history. 
 
 When using the send command, users can send shilling to either a valid shilling address or to an email address if the recipient is already registered with Shilling messenger. 
 
