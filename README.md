@@ -29,7 +29,7 @@ Additional functionality will be added with future updates.
 
 ## 5. Licensing 
 
-Lite.IM is licensed under the [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html) (AGPL-3.0-only) license. This means you are free to share or adapt it in any way, but not for commercial use.
+Shilling messenger is licensed under the [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html) (AGPL-3.0-only) license. This means you are free to share or adapt it in any way, but not for commercial use.
 
 
 ## 7. Bug Reporting
